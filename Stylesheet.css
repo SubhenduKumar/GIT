@@ -1,0 +1,31 @@
+div.zin {
+    background-color: purple;
+    width: 200px;
+    border-color: green;
+    border-left-style: solid;
+    border-left-width: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#200 {
+    background-color: red;
+    width: 200px;
+    border-color: orange;
+    border-left-style: solid;
+    border-left-width: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.zing {
+    text-align: center;
+    text-shadow: black;
+    border: 2px solid black;
+    width: 100px;
+    font-size: 10px;
+}
