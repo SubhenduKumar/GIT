@@ -3,8 +3,6 @@ var num2 = document.getElementById("num2");
 var operator = document.getElementById("operator");
 var result = document.getElementById("result");
 
-
-
 function calculator() {
     if (num1.value === "") {
         alert("enter no 1")
