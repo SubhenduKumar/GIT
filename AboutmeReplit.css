@@ -1,0 +1,74 @@
+body {
+    background-color: #f5f5f5;
+    color: #4e4e4e;
+}
+
+.box-shadow-full {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.about-img {
+    margin-bottom: 2rem;
+}
+
+img {
+    margin-left: 10px;
+}
+
+.skills-mf span {
+    color: #4e4e4e;
+    /* margin-left: 20px; */
+    padding-left: 3rem;
+}
+
+.progress {
+    background-color: #cde1f8;
+    margin: .5rem 0 1.2rem0;
+    height: 0.7rem;
+    padding-left: 10px;
+}
+
+.progress-bar {
+    height: .7rem;
+    background-color: #0078ff;
+}
+
+.fa-react {
+    font-size: 24px;
+    background-color: #00bbf0;
+}
+
+.title-left {
+    font-size: 3rem;
+    position: relative;
+}
+
+.title-left:hover {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 1000px;
+    bottom: -12px;
+}
+
+.title-s {
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.4rem;
+    padding-left: 10px;
+}
+
+.sect-pt4 {
+    padding-top: 4rem 0;
+}
+
+.box-shadow-full {
+    background-color: white;
+    padding-bottom: 3rem 1.25rem;
+    position: relative;
+    z-index: 2;
+    margin-left: 3rem;
+    box-shadow: 5px 10px7px 25px rgba(211, 221, 221, 0.5);
+}
