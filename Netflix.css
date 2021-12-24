@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.title {
+    color: red;
+    margin: 0;
+}
+
+.net {
+    margin-right: 50px;
+    float: right;
+}
+
+.Series {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+}
+
+.Series h3 {
+    display: flex;
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.Series.active {
+    flex: 5;
+}
+
+.Series button {
+    cursor: pointer;
+    border-radius: .4rem;
+    color: white;
+    background-color: red;
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    float: right;
+    opacity: 0;
+}
+
+.ico {
+    opacity: 0;
+    margin-top: 30px;
+    margin-right: 30px;
+    float: right;
+}
+
+.icon,
+.fas {
+    margin-right: 20px;
+}
+
+.Series.active h3,
+.Series.active button,
+.Series.active>.ico {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.color {
+    color: red;
+}
+
+.colorblack {
+    color: blue;
+}
+
+@media (max-width: 750px) {
+    .container {
+        width: 100vw;
+    }
+    /* .series4,
+    .series5 {
+        display: none;
+    } */
+    .Series:nth-of-type(5) {
+        display: none;
+    }
+}
+
+@media (max-width:550px) {
+    .Series:nth-of-type(4) {
+        display: none;
+    }
+}
+
+.series1 {
+    background-image: url("https://wallpaperaccess.com/full/2703652.png");
+}
+
+.series2 {
+    background-image: url("https://rukminim1.flixcart.com/image/416/416/k8xduvk0/poster/w/k/m/medium-stranger-things-poster-high-resolution-300-gsm-18x12-original-imafqu94gau22ngz.jpeg?q=70");
+}
+
+.series3 {
+    background-image: url("https://theculturednerd.org/wp-content/uploads/2020/05/the-dark-poster.jpg");
+}
+
+.series4 {
+    background-image: url("https://m.media-amazon.com/images/I/71Rw3n0q6nS._AC_SL1024_.jpg");
+}
+
+.series5 {
+    background-image: url("https://www.filmyzap.com/wp-content/uploads/2021/12/The-Witcher-Season-2-Download-758x364.jpg");
+}
