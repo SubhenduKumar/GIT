@@ -91,3 +91,19 @@ button {
     border: 5px solid #14727d;
     text-align: center;
 }
+#list {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.head {
+    background-color: mediumpurple;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    width: 750px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
