@@ -23,7 +23,7 @@ const sub = document.getElementById("sub")
 const winner = document.getElementById("winner")
 
 
-let draggedItem = null;
+let draggedItem = null
 
 for (let i = 0; i < list_items.length; i++) {
     const item = list_items[i];
