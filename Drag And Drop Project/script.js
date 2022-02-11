@@ -20,6 +20,9 @@ const eleven = document.getElementById("11")
 
 const sub = document.getElementById("sub")
 
+const winner = document.getElementById("winner")
+
+
 let draggedItem = null;
 
 for (let i = 0; i < list_items.length; i++) {
@@ -70,33 +73,41 @@ let win2 = false
 let win3 = false
 
 function check() {
-
-    if (one.nextElementSibling.classList.contains("2")) {
-        if (two.nextElementSibling.classList.contains("3")) {
-            if (three.nextElementSibling.classList.contains("4")) {
-
-                win1 = true
-                console.log("W");
+    try {
+        if (one.nextElementSibling.classList.contains("2")) {
+            if (two.nextElementSibling.classList.contains("3")) {
+                if (three.nextElementSibling.classList.contains("4")) {
+                    win1 = true
+                }
             }
         }
-    }
-    if (five.nextElementSibling.classList.contains("6")) {
-        if (six.nextElementSibling.classList.contains("7")) {
-            win2 = true
-        }
-    }
-    if (eight.nextElementSibling.classList.contains("9")) {
-        if (nine.nextElementSibling.classList.contains("10")) {
-            if (ten.nextElementSibling.classList.contains("11")) {
-                win3 = true
+        if (five.nextElementSibling.classList.contains("6")) {
+            if (six.nextElementSibling.classList.contains("7")) {
+                win2 = true
             }
         }
-    }
-    if (win1 == true && win2 == true && win3 == true) {
-        const winner = document.getElementById("winner")
-        winner.innerText = "You Won The Game!!"
+        if (eight.nextElementSibling.classList.contains("9")) {
+            if (nine.nextElementSibling.classList.contains("10")) {
+                if (ten.nextElementSibling.classList.contains("11")) {
+                    win3 = true
+                }
+            }
+        }
+
+
+        if (win1 == true && win2 == true && win3 == true) {
+            winner.innerText = "You Won The Game!!"
+            winner.style.color = "darkslategrey"
+            winner.style.fontSize = "50px"
+        } else {
+            winner.innerText = "Not Yet Sorted... Sort Again.."
+            winner.style.color = "red"
+            winner.style.fontSize = "50px"
+        }
+
+
+    } catch (e) {
+        winner.innerText = "Not Yet Sorted... Sort Again.."
         winner.style.color = "red"
         winner.style.fontSize = "50px"
-    }
-
-}
+    }}
