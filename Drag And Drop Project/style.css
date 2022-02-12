@@ -56,15 +56,13 @@ header {
 }
 
 h4,
-h1,
-h5 {
+h1
+ {
     color: darkslategrey;
     text-align: center;
 }
 
-#super {
-    font-size: o.99rem;
-}
+
 
 #subt {
     margin-bottom: 50px;
