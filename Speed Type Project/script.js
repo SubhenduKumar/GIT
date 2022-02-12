@@ -27,7 +27,7 @@ checktext.addEventListener('input', () => {
 
     let state = true
     arrQuote.forEach((elementSpan, index) => {
-        if (arr[index] == "") {
+        if (arr[index] == null) {
             elementSpan.classList.remove('green')
             elementSpan.classList.remove('red')
             state = false
