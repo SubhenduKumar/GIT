@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700&display=swap');
+*body {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+.backvideo {
+    /* height: 100vh;
+    width: 100vw; */
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.play {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+h3 {
+    position: absolute;
+    bottom: -5%;
+    left: 25%;
+    font-size: 20px
+}
+
+.mode {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100vw;
+    /* background-color: aqua */
+}
+
+.innercircle {
+    /* display: flex; */
+    position: relative;
+    top: 40%;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+h3 {
+    margin-left: 30px;
+}
+
+.p {
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, 50%);
+}
+
+.play .innercircle svg {
+    position: absolute;
+    transform: translate(-50%, -23%) rotate(-90deg);
+    pointer-events: none;
+}
+
+.timing {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.ten,
+.two,
+.thirty {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    border: 2px solid white;
+    transform: all 0.5s ease;
+}
+
+label {
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.video-container {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -1;
+}
+
+.rainicon,
+.beachicon {
+    cursor: pointer;
+}
