@@ -16,12 +16,8 @@ body {
     min-height: 100vh;
 }
 
-.div1 {
-    position: absolute;
-    bottom: 20px;
+.div{
     padding: 10px 20px;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.1);
 }
 
 input {
