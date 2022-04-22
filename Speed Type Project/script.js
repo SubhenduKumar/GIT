@@ -26,6 +26,7 @@ checktext.addEventListener('input', () => {
     const arr = checktext.value.split('')
 
     let state = true
+    let count = 0
     arrQuote.forEach((elementSpan, index) => {
         if (arr[index] == null) {
             elementSpan.classList.remove('green')
@@ -34,24 +35,35 @@ checktext.addEventListener('input', () => {
         } else if (arr[index] === elementSpan.innerText) {
             elementSpan.classList.add('green')
             elementSpan.classList.remove('red')
+            count++;
         } else {
             elementSpan.classList.remove('green')
             elementSpan.classList.add('red')
             state = false
         }
     })
-    if (state) {
+
+    if (arrQuote.length === arr.length) {
+
+        let wordCount = checktext.value.split(" ").length
+        console.log(wordCount);
+        console.log(count);
+        alert("Accuracy is " + (Math.floor((count / arrQuote.length) * 100)) + "%")
+
+        alert("Typing Speed " + Math.round((wordCount * 60) / newtime) + " WPM")
         newQuote()
     }
 })
 
 let startTime
+let newtime
 
 function startTimer() {
     timer.innerText = 0
     startTime = new Date()
     setInterval(() => {
         timer.innerText = getTime()
+        newtime = timer.innerText
     }, 1000)
 }
 
