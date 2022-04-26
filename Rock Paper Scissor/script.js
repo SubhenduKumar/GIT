@@ -51,14 +51,14 @@ function displaySelection(whoIsPlaying, selection, result) {
     if (whoIsPlaying === 'player') {
         playerSelect.innerHTML = `<i class="fas fa-hand-${selection}"></i>`
 
-        if (result === 'Player Won😃') {
+        if (result === 'Player won!') {
             playerSelect.style.color = 'green'
             compSelect.style.color = 'red'
         }
     } else {
         compSelect.innerHTML = `<i class="fas fa-hand-${selection}"></i>`
 
-        if (result === 'Computer won😔') {
+        if (result === 'Computer won!') {
             playerSelect.style.color = 'red'
             compSelect.style.color = 'green'
         }
@@ -75,11 +75,11 @@ function displaySelection(whoIsPlaying, selection, result) {
 function scoreBoard(result) {
 
     // if(!gameFinished()){
-    if (result === 'Player won😃') {
+    if (result === 'Player won!') {
         playerScore++
         pScore.innerText = playerScore
         cScore.innerText = computerScore
-    } else if (result === 'Computer won😔') {
+    } else if (result === 'Computer won!') {
         computerScore++
         pScore.innerText = playerScore
         cScore.innerText = computerScore
@@ -128,7 +128,7 @@ function playRound(ps, cs) {
 function getMeWinner(playerSelection) {
     let computerSelection = computerPlay()
     let winner = playRound(playerSelection, computerSelection)
-    winner = winner === 0 ? 'Draw!' : (winner === 1 ? 'Player won😃' : 'Computer won😔')
+    winner = winner === 0 ? 'Draw!' : (winner === 1 ? 'Player won!' : 'Computer won!')
 
     // if(winner === 0 )
     //     winner = 'Draw'
@@ -154,7 +154,7 @@ function gameFinished() {
 function whoWon() {
     if (gameFinished()) {
         if (playerScore === 5) {
-            message.innerText = 'Player is the Winner! Congratulations!'
+            message.innerText = 'Player is the winner! Congratulations!'
         } else {
             message.innerText = 'Computer is the Winner! You Lose!'
         }
