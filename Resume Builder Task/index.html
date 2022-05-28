@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container m-auto p-2">
+        <form action="./result/result.html" method="get" target="_blank" class="lead form-group">
+            <div class="row">
+                <div class="col-sm">
+                    <h2 class="text-primary">Name</h2>
+                    <input type="text" class="form-control" name="Name" value="John Doe">
+
+                    <h2 class="text-primary">Designation</h2>
+                    <input class="form-control" type="text" name="Designation" value="Business Development Manager">
+
+                    <h2 class="text-primary">Description</h2>
+                    <textarea class="form-control" name="Description">Professional Business Developer with more than four years of experince in the business development process. Involved in product testing, management, and development of new business opportunitites.</textarea>
+                </div>
+                <div class="col-sm">
+                    <h2 class="text-primary">Phone</h2>
+                    <input class=" form-control" type="phone" name="Phone" value="202-555-0166">
+
+                    <h2 class="text-primary">Email</h2>
+                    <input class="form-control" type="email" name="Email" value="john.doe@gmail.com">
+
+                    <h2 class="text-primary">Location</h2>
+                    <input class="form-control" type="text" name="Location" value="New York, USA">
+
+                    <h2 class="text-primary">LinkedIN URL</h2>
+                    <input class="form-control" type="text" name="linkedin-url" value="linkedin.com/in/john.doe">
+
+                    <h2 class="text-primary">Skype URL</h2>
+                    <input class="form-control" type="text" name="skype-url" value="john.doe">
+                </div>
+            </div>
+            <h2 class="text-primary">Work Experience</h2>
+            <div class="row">
+                <div class="col-sm">
+                    <h5 class="text-danger">Organisation-1</h5>
+                    <input class="form-control mb-1" type="text" name="Designation-1" value="Business Development Manager">
+                    <input class="form-control mb-1" type="text" name="Organization-1" value="AirState Solutions">
+                    <input class="form-control mb-1" type="month" name="Start-1" value="2014-04">
+                    <input class="form-control mb-1" type="month" name="End-1" value="2017-06">
+                    <input class="form-control mb-1" type="location" name="Location-1" value="New York, USA">
+                    <textarea class="form-control mb-1" name="JD-1">
+                        dangerfully managed $2 - $3 million budget projects and succcessfully achieved the projects scheduled goals.
+                        Developed and implmented new marketing and sales plans and defined strategy for the next 5 years.
+                        Reviewed constantly the customer feedback and then suggested ways to improve the processes and customer service levels which increased the satisfaction rate from 81% to 95%.
+                        Ensured that new clients will grow into a loyal customer base in a specialist niche market by implementing a new loyalty program
+                    </textarea><br>
+                </div>
+                <div class="col-sm">
+                    <h5 class="text-danger">Organisation-2</h5>
+                    <input class="form-control mb-1" type="text" name="Designation-2" value="Business Development Assistant">
+                    <input class="form-control mb-1" type="text" name="Organization-2" value="AirState Solutions">
+                    <input class="form-control mb-1" type="month" name="Start-2" value="2012-08">
+                    <input class="form-control mb-1" type="month" name="End-2" value="2014-09">
+                    <input class="form-control mb-1" type="location" name="Location-2" value="Chicago, USA">
+                    <textarea class="form-control" name="JD-2" rows="5" cols="60">
+                        Increased the customer satisfaction rate by 25% by improving the customer service.
+                        Planned, supervised and coordinated daily activity of 3 junior business analysts.
+                        Improved the communication with the Marketing department to better understand the competitive position.
+                        Directed the creation and implementation of a Business Continuity Plan, and the management of audit programs
+                    </textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <h2 class="text-primary">Education</h2>
+                    <input class="form-control mb-1" type="text" name="Degree" value="MSc in Economics and Business Administration">
+                    <input class="form-control mb-1" type="text" name="University" value="The University of Chicago">
+                    <input class="form-control mb-1" type="month" name="Start" value="2008-09">
+                    <input class="form-control mb-1" type="month" name="End" value="2010-06">
+                </div>
+                <div class="col-sm">
+                    <h2 class="text-primary">Languages</h2>
+                    <div class="d-flex">
+                        <input class="form-control mb-1" type="text" id="m_Language-1" name="Language-1" value="English">&nbsp;
+                        <input class="form-control mb-1" type="text" id="m_Volume-1" name="Volume-1" value="Expert">
+                    </div>
+                    <div class="d-flex">
+                        <input class="form-control mb-1" type="text" id="m_Language-2" name="Language-2" value="Spanish">&nbsp;
+                        <input class="form-control mb-1" type="text" id="m_Volume-2" name="Volume-2" value="Intermediate">
+                    </div>
+                    <div class="d-flex">
+                        <input class="form-control mb-1" type="text" id="m_Language-3" name="Language-3" value="French">&nbsp;
+                        <input class="form-control mb-1" type="text" id="m_Volume-3" name="Volume-3" value="Beginner">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-primary">Skills</h2>
+                <input class="form-control" type="text" id="m_Skills" name="Skills" value="SEO, Public Speaking, Negotiation, Teamwork, Decision Making, Research &amp; strategy, Emotional Intelligence, Outbound Marketing, Google Analytics, Sales
+                        and Marketing, Social Media Marketing, Email Marketing">
+            </div>
+            <div class="row">
+                <h2 class="text-primary">Organizations</h2>
+                <div class="col-sm">
+                    <h5 class="text-danger">Organisation-1</h5>
+                    <input class="form-control mb-1" type="text" name="Organisation-1" value="American Management Association">
+                    <input class="form-control mb-1" type="month" name="from-year-1" value="2015-01">
+                    <input class="form-control mb-1" type="month" name="to-year-1" value="2015-01">
+                </div>
+                <div class="col-sm">
+                    <h5 class="text-danger">Organisation-2</h5>
+                    <input class="form-control mb-1" type="text" name="Organisation-2" value="Association of Private Enterprise Education">
+                    <input class="form-control mb-1" type="month" name="from-year-2" value="2014-01">
+                    <input class="form-control mb-1" type="month" name="to-year-2" value="2014-01">
+                </div>
+                <div class="col-sm">
+                    <h5 class="text-danger">Organisation-3</h5>
+                    <input class="form-control mb-1" type="text" name="Organisation-3" value="eBusiness Association(eBA)">
+                    <input class="form-control mb-1" type="month" name="from-year-3" value="2013-01">
+                    <input class="form-control mb-1" type="month" name="to-year-3" value="2013-01">
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="text-primary">Honours &amp; Awards</h2>
+                <div class="col-sm">
+                    <h5 class="text-danger">Honours &amp; Awards-1</h5>
+                    <input class="form-control mb-1" type="text" name="Honour-1" value="Jury Member, Venture Cup Entreprenuership Competition (2016)">
+                    <input class="form-control mb-1" type="text" name="Award-1" value="Venture Cup, USA">
+                </div>
+                <div class="col-sm">
+                    <h5 class="text-danger">Honours &amp; Awards-2</h5>
+                    <input class="form-control mb-1" type="text" name="Honour-2" value="Sales Individual &amp; Business Development Award (2015)">
+                    <input class="form-control mb-1" type="text" name="Award-2" value="AirState Business Awards">
+                </div>
+                <div class="col-sm">
+                    <h5 class="text-danger">Honours &amp; Awards-2</h5>
+                    <input class="form-control mb-1" type="text" name="Honour-3" value="Excellence in Customer Parterning Awards (2014)">
+                    <input class="form-control mb-1" type="text" name="Award-3" value="IES - Institute of Excellence in Sales">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h2 class="text-primary">Conferences &amp; Courses</h2>
+                <div class="col-sm">
+                    <h5 class="text-danger">Conferences &amp; Courses-1</h5>
+                    <input class="form-control mb-1" type="text" name="Course-1" value="Leading People and Teams- Specialisation">
+                    <input class="form-control mb-1" type="text" name="Subtitle-1" value="Online course on Coursera.org">
+                </div>
+                <div class="col-sm">
+                    <h5 class="text-danger">Conferences &amp; Courses-2</h5>
+                    <input class="form-control mb-1" type="text" name="Course-2" value="eMetrics Summit (09/2016)">
+                    <input class="form-control mb-1" type="text" name="Subtitle-2" value="Rising Media, Inc. and eMetrics Summit">
+                </div>
+                <div class="col-sm">
+                    <h5 class="text-danger">Conferences &amp; Courses-3</h5>
+                    <input class="form-control mb-1" type="text" name="Course-3" value="Project Management Principles and Practices (01/2015 - 09/2015)">
+                    <input class="form-control mb-1" type="text" name="Subtitle-3" value="Online course on Coursera.org">
+                </div>
+                <div class="col-sm">
+                    <h5 class="text-danger">Conferences &amp; Courses-4</h5>
+                    <input class="form-control mb-1" type="text" name="Course-4" value="Full stack web development (01/2014 - 10/2015)">
+                    <input class="form-control mb-1" type="text" name="Subtitle-4" value="Acciojob">
+                </div>
+            </div>
+            <div class="text-center">
+                <input class="btn btn-primary m-2 p-1" type="submit" value="Submit">
+                <input id="reset" class="btn btn-secondary m-2 p-1" type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <script src="script.js"></script>
+</footer>
+
+</html>

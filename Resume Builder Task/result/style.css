@@ -1,0 +1,49 @@
+h1 {
+    color: #800000;
+    text-transform: uppercase;
+}
+
+#Designation {
+    color: #8b8680;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+li:before {
+    content: "-";
+    padding-right: 2px;
+}
+
+.contact>h5 {
+    font-size: .9em;
+}
+
+h3,
+h5 {
+    color: rgb(0, 0, 0, 0.8)
+}
+
+.grey {
+    color: #8b8680;
+}
+
+hr.good,
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
