@@ -57,7 +57,9 @@ function dateBuilder(d) {
 
 const temp = document.querySelector('.current .temp');
 console.log(temp);
-// temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
+
+
+//this is for changing temp to farenhite
 temp.addEventListener("click", change)
 let flag = 0;
 
